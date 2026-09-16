@@ -1,80 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nidafazli Nalband Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nidafazli Nalband - Computer Science Engineering student, software development and AI enthusiast.">
+    <meta name="author" content="Nidafazli Nalband">
+    <title>Nidafazli Nalband | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="brand">Nidafazli Nalband</div>
-      <div class="nav-links">
-        <a href="index.html" class="nav-btn active" id="home-btn">Home</a>
-        <a href="resume.html" class="nav-btn" id="resume-btn">Resume</a>
-        <a href="biodata.html" class="nav-btn" id="biodata-btn">Biodata</a>
-      </div>
+
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#home" class="logo">Nidafazli<span>.</span></a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" type="button">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </nav>
+</header>
 
-  <main class="container fade-in">
-    <section class="hero">
-      <img src="nida.jpeg" alt="Profile Photo" class="profile-img" />
-      <h1>Nidafazli Nalband</h1>
-      <h2>B.E. Computer Science & Engineering</h2>
-      <p>Passionate about developing efficient software solutions and growing in the IT field.</p>
-      <div class="hero-buttons">
-        <a href="resume.pdf" download="resume.pdf" target="_blank" class="btn primary">Download Resume</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </section>
+<main>
 
-    <section id="about" class="about">
-      <h3>About Me</h3>
-      <p>I am a dedicated Computer Science Engineering student with a strong foundation in technical skills. My goal is to apply my analytical abilities to create innovative software solutions and continuously advance in the IT industry.</p>
-      <p><strong>Location:</strong> Nizamiya Nagar Dhamne Road, Vadagaon, Belgavi, Karnataka</p>
-    </section>
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <div class="hero-text reveal">
+            <span class="hero-label">Computer Science Engineering</span>
 
-    <section id="skills" class="skills">
-      <h3>Skills</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <h4>Programming</h4>
-          <p>Python</p>
-        </div>
-        <div class="skill-item">
-          <h4>Web Development</h4>
-          <p>HTML, CSS, JavaScript</p>
-        </div>
-        <div class="skill-item">
-          <h4>Other</h4>
-          <p>Problem Solving, Analytical Thinking</p>
-        </div>
-      </div>
-    </section>
+            <h1>
+                Hi, I'm <span>Nidafazli</span> Nalband
+            </h1>
 
-    <section id="contact" class="contact">
-      <h3>Contact Information</h3>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <span class="icon">📧</span>
-          <p><a href="mailto:nidafazlinalband@gmail.com">nidafazlinalband@gmail.com</a></p>
-        </div>
-        <div class="contact-item">
-          <span class="icon">📱</span>
-          <p>7795845898</p>
-        </div>
-        <div class="contact-item">
-          <span class="icon">📍</span>
-          <p>Nizamiya Nagar Dhamne Road, Vadagaon, Belgavi, Karnataka</p>
-        </div>
-      </div>
-    </section>
-  </main>
+            <p class="hero-description">
+                Software Development & AI Enthusiast focused on building
+                practical web applications and intelligent solutions using
+                modern technologies.
+            </p>
 
-  <script src="script.js"></script>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="resume.html" class="btn btn-secondary">View Resume</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/Nidafazli-Nalband" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/nidafazli-nalband-ab62792a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="hero-card reveal">
+            <div class="code-card">
+                <div class="code-top">developer.py</div>
+                <div class="code-content">
+                    <div><span class="code-keyword">class</span> Developer:</div>
+                    <div>&nbsp;&nbsp;name = <span class="code-string">"Nidafazli"</span></div>
+                    <div>&nbsp;&nbsp;role = <span class="code-string">"Software Developer"</span></div>
+                    <div>&nbsp;&nbsp;skills = [</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Python"</span>,</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Java"</span>,</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"JavaScript"</span>,</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"AI & Computer Vision"</span></div>
+                    <div>&nbsp;&nbsp;]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">About Me</span>
+            <h2>Building skills through practical projects</h2>
+            <p>Focused on learning, developing, and solving real-world problems.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text reveal">
+                <p>
+                    I am a final-year B.E. Computer Science and Engineering
+                    student with hands-on experience in Python, Java,
+                    JavaScript, web development, backend development,
+                    databases, and computer vision.
+                </p>
+
+                <p>
+                    I enjoy developing practical software solutions and
+                    exploring AI-based applications that combine technology
+                    with real-world use cases.
+                </p>
+
+                <p>
+                    My current interests include software development,
+                    problem solving, web applications, and AI-powered systems.
+                </p>
+            </div>
+
+            <div class="about-highlights reveal">
+                <div class="highlight-card">
+                    <h3>Education</h3>
+                    <p>B.E. Computer Science & Engineering</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>CGPA</h3>
+                    <p>8.4</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Focus</h3>
+                    <p>Software Development & AI</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Approach</h3>
+                    <p>Learn, Build & Improve</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section skills-section" id="skills">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">Technical Skills</span>
+            <h2>Technologies I work with</h2>
+            <p>A practical technology stack developed through coursework and projects.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⌘</div>
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⌘</div>
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Flask</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⌘</div>
+                <h3>Database</h3>
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>SQLite</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⌘</div>
+                <h3>AI & Tools</h3>
+                <div class="skill-tags">
+                    <span>YOLOv8</span>
+                    <span>Computer Vision</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">Projects</span>
+            <h2>Things I've built</h2>
+            <p>Projects developed to apply technical knowledge to practical problems.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card reveal">
+                <span class="project-number">01</span>
+                <div class="project-content">
+                    <span class="project-category">AI / Computer Vision</span>
+
+                    <h3>SafeCam</h3>
+
+                    <p>
+                        An ongoing AI-powered accident detection and emergency
+                        alert system designed to detect accident-related events
+                        from traffic video and support monitoring, alerts, and
+                        incident history.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>YOLOv8</span>
+                        <span>Computer Vision</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/Nidafazli-Nalband/SafeCam-AI-Powered-Real-Time-Accident-Detection-Emergency-Alert-System"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card reveal">
+                <span class="project-number">02</span>
+                <div class="project-content">
+                    <span class="project-category">Web / AI</span>
+
+                    <h3>College Enquiry Chatbot</h3>
+
+                    <p>
+                        A Flask-based college enquiry chatbot developed for
+                        MMEC to provide college-related information through
+                        an interactive interface with query management and
+                        an admin dashboard.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>SQLite</span>
+                        <span>TF-IDF</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/Nidafazli-Nalband/College_Enquiry_Chatbot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="experience">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">Experience</span>
+            <h2>Internship Experience</h2>
+            <p>Practical experience gained through web development work.</p>
+        </div>
+
+        <div class="experience-card reveal">
+            <div class="experience-header">
+                <div>
+                    <h3>Web Development Intern</h3>
+                    <p>SkillCraft Technology</p>
+                </div>
+
+                <span class="experience-period">1 Month · Online</span>
+            </div>
+
+            <ul>
+                <li>Worked with HTML, CSS, and JavaScript.</li>
+                <li>Developed responsive and interactive web interfaces.</li>
+                <li>Practiced debugging and problem solving.</li>
+                <li>Gained practical experience with frontend and web development workflows.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section education-section" id="education">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">Education</span>
+            <h2>Academic Background</h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+                <div class="timeline-year">2023–2027</div>
+                <div class="timeline-content">
+                    <h3>B.E. Computer Science and Engineering</h3>
+                    <p>Maratha Mandal Engineering College, Belagavi</p>
+                    <p>CGPA: 8.4</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-year">2021–2023</div>
+                <div class="timeline-content">
+                    <h3>Pre-University Course</h3>
+                    <p>Percentage: 82.33%</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-year">2021</div>
+                <div class="timeline-content">
+                    <h3>SSLC</h3>
+                    <p>Percentage: 80.64%</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="certifications">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">Certifications</span>
+            <h2>Learning & Certifications</h2>
+        </div>
+
+        <div class="certification-grid">
+
+            <div class="certification-card reveal">
+                <h3>Python Programming Certificate</h3>
+                <p>Programming fundamentals and Python development.</p>
+            </div>
+
+            <div class="certification-card reveal">
+                <h3>Web Development Certificate</h3>
+                <p>Web development using modern frontend technologies.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <div class="contact-box reveal">
+            <span class="section-label">Contact</span>
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Interested in connecting or discussing a project?
+                Feel free to reach out.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:nidafazlinalband@gmail.com">Email Me</a>
+
+                <a
+                    href="https://github.com/Nidafazli-Nalband"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/nidafazli-nalband-ab62792a0/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p>© 2026 Nidafazli Nalband. All rights reserved.</p>
+        <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
